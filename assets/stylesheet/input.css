@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    @font-face {
+        font-family: 'poppinsbold';
+        src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+            url('../fonts/Poppins-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'poppinssemibold';
+        src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+            url('../fonts/Poppins-SemiBold.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'poppinsregular';
+        src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+            url('../fonts/Poppins-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'poppinsthin';
+        src: url('../fonts/Poppins-Thin.woff2') format('woff2'),
+            url('../fonts/Poppins-Thin.woff') format('woff');
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    html, body {
+        @apply text-base font-poppinsregular bg-siteBlack text-siteWhite scroll-smooth;
+    }
+
+    body {
+        @apply flex flex-col min-h-screen;
+    }
+
+    footer {
+        @apply mt-auto;
+    }
+
+    ::selection {
+        @apply bg-primary text-siteWhite;
+    }
+
+    .x-cloak {
+        @apply invisible;
+    }
+
+}
+
+@layer components {
+    button.primary,
+    a.primary-btn {
+        @apply bg-primary hover:bg-primary/90 text-siteWhite cursor-pointer font-poppinsregular;
+    }
+}
+
+.hero-img {
+    animation: jump 5s infinite linear;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-marquee-forward {
+    animation: marquee_forward 20s linear infinite;
+}
+
+.animate-marquee-reverse {
+    animation: marquee_reverse 20s linear infinite
+}
+
+@keyframes marquee_forward {
+    0% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee_reverse {
+    0% {
+        transform: translateX(-100%);
+    }
+    
+    100% {
+        transform: translateX(0%);
+    }
+}
