@@ -127,7 +127,7 @@ function renderCarousel(initCarousel) {
                     <img class="w-full h-[115px] sm:h-[150px] object-cover rounded-md" src="${item?.image}" alt="Poster Image" />
                 </div>
                 <div class="mt-2 space-y-2">
-                    <h4 class="line-clamp-1 cursor-pointer" onclick="showRecipe(${item.id}, '${item.name}')" title="${item?.name}">${item?.name}</h4>
+                    <h4 class="line-clamp-1 cursor-pointer select-none" onclick="showRecipe(${item.id}, '${item.name}')" title="${item?.name}">${item?.name}</h4>
                     <div class="flex items-center text-gray-400 text-[12px] sm:text-[14px] leading-none">
                         <div class="flex gap-1 items-center">
                             <div>
@@ -166,7 +166,7 @@ function renderDishes() {
                     <img class="w-full h-[115px] sm:h-[150px] object-cover rounded-md" src="${item?.image}" alt="Poster Image" />
                 </div>
                 <div class="mt-2 space-y-2">
-                    <h4 class="line-clamp-1 cursor-pointer" onclick="showRecipe(${item.id}, '${item.name}')" title="${item?.name}">${item?.name}</h4>
+                    <h4 class="line-clamp-1 cursor-pointer select-none" onclick="showRecipe(${item.id}, '${item.name}')" title="${item?.name}">${item?.name}</h4>
                     <div class="flex items-center text-gray-400 text-[12px] sm:text-[14px] leading-none">
                         <div class="flex gap-1 items-center">
                             <div>
@@ -252,7 +252,7 @@ function renderSearchedDishes(searchTerm) {
                         <img class="w-full h-[115px] sm:h-[150px] object-cover rounded-md" src="${item?.image}" alt="Poster Image" />
                     </div>
                     <div class="mt-2 space-y-2">
-                        <h4 class="line-clamp-1 cursor-pointer" onclick="showRecipe(${item.id}, '${item.name}')" title="${item?.name}">${item?.name}</h4>
+                        <h4 class="line-clamp-1 cursor-pointer select-none" onclick="showRecipe(${item.id}, '${item.name}')" title="${item?.name}">${item?.name}</h4>
                         <div class="flex items-center text-gray-400 text-[12px] sm:text-[14px] leading-none">
                             <div class="flex gap-1 items-center">
                                 <div>

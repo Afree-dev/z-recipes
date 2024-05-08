@@ -781,10 +781,6 @@ button.primary:hover,
   grid-column: span 2 / span 2;
 }
 
-.col-span-8 {
-  grid-column: span 8 / span 8;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -819,6 +815,14 @@ button.primary:hover,
   margin-bottom: 1.25rem;
 }
 
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -841,14 +845,6 @@ button.primary:hover,
 
 .mt-\[-80px\] {
   margin-top: -80px;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
-.ml-1 {
-  margin-left: 0.25rem;
 }
 
 .line-clamp-1 {
@@ -906,11 +902,6 @@ button.primary:hover,
   height: 1.25rem;
 }
 
-.size-6 {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
 .h-\[115px\] {
   height: 115px;
 }
@@ -954,10 +945,6 @@ button.primary:hover,
 
 .shrink-0 {
   flex-shrink: 0;
-}
-
-.table-fixed {
-  table-layout: fixed;
 }
 
 .origin-\[0\] {
@@ -1025,32 +1012,30 @@ button.primary:hover,
   cursor: pointer;
 }
 
-.resize {
-  resize: both;
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
-.list-disc {
-  list-style-type: disc;
+.resize {
+  resize: both;
 }
 
 .list-decimal {
   list-style-type: decimal;
 }
 
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.list-disc {
+  list-style-type: disc;
 }
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1101,10 +1086,6 @@ button.primary:hover,
   gap: 15px;
 }
 
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
@@ -1139,23 +1120,6 @@ button.primary:hover,
   --tw-divide-y-reverse: 0;
   border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
-}
-
-.divide-x > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-x-reverse: 0;
-  border-right-width: calc(1px * var(--tw-divide-x-reverse));
-  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
-}
-
-.divide-y > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
-}
-
-.divide-slate-500 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgb(100 116 139 / var(--tw-divide-opacity));
 }
 
 .overflow-hidden {
@@ -1202,10 +1166,6 @@ button.primary:hover,
   border-width: 4px;
 }
 
-.border-r {
-  border-right-width: 1px;
-}
-
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -1249,28 +1209,16 @@ button.primary:hover,
   background-color: transparent;
 }
 
+.fill-current {
+  fill: currentColor;
+}
+
 .fill-gray-400 {
   fill: #9ca3af;
 }
 
 .fill-siteWhite {
   fill: #f0f0e7;
-}
-
-.fill-primary {
-  fill: #E1410D;
-}
-
-.fill-current {
-  fill: currentColor;
-}
-
-.stroke-white {
-  stroke: #fff;
-}
-
-.stroke-siteWhite {
-  stroke: #f0f0e7;
 }
 
 .object-contain {
@@ -1342,6 +1290,14 @@ button.primary:hover,
   padding-bottom: 40px;
 }
 
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -1356,18 +1312,6 @@ button.primary:hover,
 
 .pt-\[80px\] {
   padding-top: 80px;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
-}
-
-.pl-5 {
-  padding-left: 1.25rem;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
 }
 
 .text-center {
@@ -1412,6 +1356,10 @@ button.primary:hover,
   font-size: 14px;
 }
 
+.text-\[18px\] {
+  font-size: 18px;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1425,14 +1373,6 @@ button.primary:hover,
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[18px\] {
-  font-size: 18px;
-}
-
-.uppercase {
-  text-transform: uppercase;
 }
 
 .capitalize {
@@ -1469,14 +1409,6 @@ button.primary:hover,
 
 .underline {
   text-decoration-line: underline;
-}
-
-.opacity-90 {
-  opacity: 0.9;
-}
-
-.opacity-50 {
-  opacity: 0.5;
 }
 
 .shadow {
@@ -1691,10 +1623,6 @@ button.primary:hover,
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .lg\:divide-y-0 > :not([hidden]) ~ :not([hidden]) {
